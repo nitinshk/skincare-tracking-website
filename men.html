@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Skin Type</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css" integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/fontawesome.min.js" integrity="sha512-C8qHv0HOaf4yoA7ISuuCTrsPX8qjolYTZyoFRKNA9dFKnxgzIHnYTOJhXQIt6zwpIFzCrRzUBuVgtC4e5K1nhA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<style>
+  
+body {
+  font-family: "Montserrat", sans-serif;
+  padding:15px;
+}
+.mani p{
+  font-weight: 500;
+}
+
+.showcase img{
+  position: fixed;
+  z-index: -10;
+   width: 97.5%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  margin-top: 72px;
+}
+.gradient-border {
+    --border-width: 3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-family: Lato, sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    
+    border-radius: 10px;
+  }
+  .gradient-border::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: 1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(60deg, #16a085, rgb(182, 155, 47), rgb(200, 242, 95), #18572ac6, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+  
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+.d1{
+  
+  background: linear-gradient(90deg, #16a085, rgb(182, 155, 47)); 
+  z-index: 1;
+  height: 176px;
+  padding: 5px;
+  border-radius: 10px;
+  color: antiquewhite;
+  
+}
+.d2 p{
+  width:60em;
+  
+  color: black;
+}
+.d3{
+  display: flex;
+}
+#i2{
+  margin-left: 350px;
+}
+#i3{
+  margin-left: 310px;
+}
+#i4{
+  margin-left: 480px;
+}
+
+nav{
+  background: linear-gradient(90deg, #16a085, rgb(182, 155, 47)); 
+}
+.sticky {
+  position: fixed;
+ top:-16px;
+ width: 97.5%;
+  
+}
+header{
+  height: 16.5em;
+}
+.menu ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.menu ol:first-child {
+ 
+  margin: 1rem auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
+}
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 2px solid #16a085;
+  position: relative;
+  transition: background 0.3s ease-in-out;
+}
+.menu-item:nth-child(1) > a::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: #16a085;
+}
+@media (min-width: 768px) {
+  .menu-item:nth-child(1) > a::before {
+    font-size: 1.5rem;
+  }
+}
+.menu-item:nth-child(2) > a::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: #16a085;
+}
+@media (min-width: 768px) {
+  .menu-item:nth-child(2) > a::before {
+    font-size: 1.5rem;
+  }
+}
+.menu-item:nth-child(3) > a::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: #16a085;
+}
+@media (min-width: 768px) {
+  .menu-item:nth-child(3) > a::before {
+    font-size: 1.5rem;
+  }
+}
+.menu-item:nth-child(4) > a::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: #16a085;
+}
+@media (min-width: 768px) {
+  .menu-item:nth-child(4) > a::before {
+    font-size: 1.5rem;
+  }
+}
+.menu-item:nth-child(5) > a::before {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1.2rem;
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: #16a085;
+}
+@media (min-width: 768px) {
+  .menu-item:nth-child(5) > a::before {
+    font-size: 1.5rem;
+  }
+}
+.menu-item .sub-menu > a {
+  color: red;
+}
+.menu-item:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+.menu-item .sub-menu {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  transition: transform 0.3s linear;
+  background-color: #f4d03f;
+}
+.menu-item .sub-menu .menu-item {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+.menu-item .sub-menu .menu-item a::before {
+  content: "";
+}
+.menu-item .sub-menu .menu-item:first-child {
+  border: 0;
+}
+.menu-item:hover, .menu-item.active {
+  border-top: 2px solid #f4d03f;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.menu-item:hover a::before, .menu-item.active a::before {
+  color: white;
+}
+.menu-item:hover .sub-menu {
+  transform: rotateX(0deg);
+  z-index: 2;
+}
+.menu-item a {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  height:70px;
+  width: 100%;
+  padding: 1.5em 1em;
+}
+@media (min-width: 768px) {
+  .menu-item a {
+    font-size: 1rem;
+  }
+}
+
+
+
+/* nav bar end */
+/* products start */
+.product-grid{ font-family: 'Fira Sans', sans-serif; }
+.product-grid .product-image{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%;
+    
+    box-shadow: 0 3px 5px rgba(9, 9, 9,1.5);
+}
+.product-grid .product-image a.image{ display: block; }
+.product-grid.new .product-image a.image:before,
+.product-grid .product-image a.image:after{
+    content: '';
+    background-color: #ebc60c;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute;
+    right: -25px;
+    top: -25px;
+    
+}
+.product-grid .product-image a.image:after{
+    height: 120px;
+    width: 120px;
+    right: auto;
+    left: -120px;
+    top: auto;
+    bottom: -120px;
+    transition: all 0.3s ease;
+  
+}
+.product-grid:hover .product-image a.image:after{
+    left: -25px;
+    bottom: -40px;
+    
+}
+.product-grid .product-image img{
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  
+}
+.product-grid .product-new-label{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+   
+}
+.product-grid .product-links{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: absolute;
+    bottom: 7px;
+    right: 10px;
+   
+    
+}
+.product-grid .product-links li{
+    margin: 0 0 4px;
+    transform: translateX(100px);
+    transition: all 0.5s ease 0s;
+    
+}
+.product-grid:hover .product-links li{ transform: translateX(0); }
+.product-grid:hover .product-links li:nth-child(2){ transition-delay: 0.1s; }
+.product-grid:hover .product-links li:nth-child(3){ transition-delay: 0.2s; }
+.product-grid .product-links li:last-child{ margin: 0; }
+.product-grid .product-links li a{
+    color: #000;
+    background: rgba(255,216,0,0.2);
+    font-size: 20px;
+    text-align: center;
+    line-height: 48px;
+    height:45px;
+    width: 45px;
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    
+    text-decoration: none;
+    transition: all 200ms ease 0s;
+}
+.product-grid .product-links li a:hover{ background: #ffd800; }
+.product-grid .product-links li a:before,
+.product-grid .product-links li a:after{
+    content: attr(data-tip);
+    color: #fff;
+    background-color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 0;
+    padding: 8px 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    visibility: hidden;
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transition: all 0.3s ease;
+    
+}
+.product-grid .product-links li a:after{
+    content: '';
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    border-radius: 0;
+    transform: translateY(-50%) rotate(45deg);
+    right: 58px;
+    
+}
+.product-grid .product-links li a:hover:before,
+.product-grid .product-links li a:hover:after{
+    visibility: visible;
+}
+.product-grid .product-links li a:hover:before{ right: 55px; }
+.product-grid .product-links li a:hover:after{ right: 53px; }
+.product-grid .price{
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    
+}
+.product-grid .product-content{
+    padding: 12px 0 0;
+    position: relative;
+}
+.product-grid .title{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+.product-grid .title a{
+    color: #000;
+    transition: all 0.3s ease;
+}
+.product-grid .title a:hover{ color: #666; }
+.product-content .rating{
+    padding: 0;
+    margin: 0 0 7px 0;
+    list-style: none;
+}
+.product-grid .rating li{
+    color: #ffba00;
+    font-size: 14px;
+    display: inline-block;
+}
+.product-grid .rating li.disable{ color: #b6b3b0; }
+@media screen and (max-width:990px){
+    .product-grid{ margin: 0 0 30px; }
+}
+.product-grid .product-content .title a {
+    text-decoration: none; /* Remove underlines from the links */
+}
+.product-grid:hover .product-image img {
+    transform: scale(1.1);
+    transition: transform 0.6s ease; 
+}
+.c{
+  color: #2db412; 
+  font-size: 2.5em; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.0);
+}
+
+  </style>
+  </head>
+
+  <body>
+    <div class="mani">
+      <div class="showcase">
+        <img src="bg.jpg">
+      </div>
+    
+      
+      <header style="height: 19.5em;">
+        <div class="d1">
+          <div class="gradient-border" style="height: 166px; width: 520px;">
+            <img src="lol.png" style="height:166px; z-index:4; width:520px; ">
+          </div>
+          
+        <div class="cn" style="float:right; margin-top:-80px; margin-right:100px">
+            <form class="d-flex" role="search">
+              <button formaction="about us.html" class="btn btn-outline-success" type="submit" style=" color:antiquewhite;background: linear-gradient(90deg, #72a016, rgb(182, 128, 47));width:270px;height:70px ">About  US</button>
+          
+          <button formaction="contactus.html" class="btn btn-outline-success" type="submit" style=" color:antiquewhite;background: linear-gradient(90deg, #72a016, rgb(182, 128, 47));width:270px;height:70px;margin-left:30px; ">CONTACT US</button>
+          </form>
+          </div>
+      <!--<h1 style="padding: 15px;">Welcome to Derma Home</h1>-->
+        </div>
+  <div id="navbar">
+      <nav class="menu">
+        <ol>
+            <li class="menu-item"><a href="index.html">Home</a></li>
+            
+            <li class="menu-item">
+              <a href="#0">Skin Type</a>
+              <ol class="sub-menu">
+                <li class="menu-item"><a href="normal skin.html">Normal Skin </a></li>
+                <li class="menu-item"><a href="dry skin.html">Dry Skin</a></li>
+                <li class="menu-item"><a href="oily skin.html">Oily Skin</a></li>
+               
+                <li class="menu-item"><a href="combination skin.html">Combination Skin</a></li>
+              </ol>
+            </li>
+            <li class="menu-item"><a href="skincare at home.html">Skin Care At Home</a></li>
+            <li class="menu-item"><a href="hair care.html">Hair Care At Home</a></li>
+            <li class="menu-item">
+              <a href="#0">Products</a>
+              <ol class="sub-menu">
+                <li class="menu-item"><a href="men.html">Men</a></li>
+                <li class="menu-item"><a href="women.html">Women</a></li>
+                
+              </ol>
+            </li>
+            
+            
+          </ol>
+      </nav>
+      <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" >
+              <button class="btn btn-outline-success" type="submit" style="background: linear-gradient(90deg, #16a085, rgb(182, 155, 47)); ">Search</button>
+            </form>
+          </div>
+      
+      </header>
+<div class="col text-center mb-5">
+  <div class="c">
+    <center>
+    <h1 style="color:rgb(196, 243, 167); border-radius:20px;background-color:rgb(9, 60, 3); padding:10px; width:15em;height:80px;padding-left:40px;">Products for Men</h1>
+</center>
+</div>
+<div class="row">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <div class="col-md-3 col-sm-6">
+      <div class="product-grid new">
+          <div class="product-image">
+              <a href="" class="image">
+                  <img class="pic-1" src="men1.jpg">
+              </a>
+              <div class="p">
+              <ul class="product-links">
+                  <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                  <li><a href="https://www.amazon.in/Olay-Total-Effects-Moisturizer-Gentle/dp/B00K3TUL0C/ref=sr_1_10?crid=3RVMNXHRMTMUI&keywords=oley&qid=1701587976&sprefix=olay%2Caps%2C338&sr=8-10" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+                  </a></li>
+                  <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+                  </a></li>  
+                </div>
+              </ul>
+              <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>869</div>
+          </div>
+          <div class="product-content">
+            <h3 class="title"><a href="https://www.amazon.in/Olay-Total-Effects-Moisturizer-Gentle/dp/B00K3TUL0C/ref=sr_1_10?crid=3RVMNXHRMTMUI&keywords=oley&qid=1701587976&sprefix=olay%2Caps%2C338&sr=8-10"> Olay Total Effects 7 in 1 Anti Aging Skin Cream Moisturizer Gentle SPF15 50gm</h3></a>
+               <ul class="rating">4.2
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star"></li>
+                  <li class="fas fa-star disable"></li>
+              </ul> 
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <div class="product-grid new">
+        <div class="product-image">
+            <a href="https://www.amazon.in/Garnier-Complete-Vitamin-Facewash-SYLLF150/dp/B094RYJQ1K/ref=sr_1_2_sspa?keywords=best%2Bskin%2Bcare%2Bproducts%2Bfor%2Bmen&qid=1701579386&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" class="image">
+                <img class="pic-1" src="men2.jpg">
+            </a>
+            
+            <ul class="product-links">
+                <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                <li><a href="https://www.amazon.in/Garnier-Complete-Vitamin-Facewash-SYLLF150/dp/B094RYJQ1K/ref=sr_1_2_sspa?keywords=best%2Bskin%2Bcare%2Bproducts%2Bfor%2Bmen&qid=1701579386&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+
+                </a></li>
+                <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+                </a></li>  
+            </ul>
+            <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>550</div>
+        </div>
+        <div class="product-content">
+          <h3 class="title"><a href="https://www.amazon.in/Garnier-Complete-Vitamin-Facewash-SYLLF150/dp/B094RYJQ1K/ref=sr_1_2_sspa?keywords=best%2Bskin%2Bcare%2Bproducts%2Bfor%2Bmen&qid=1701579386&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">Garnier Skin Naturals  Bright Complete Vitamin C Facewash, For Brighter and Glowing Skin - Suitable For all Skin Types</h3></a>
+            <ul class="rating">4.2
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star"></li>
+                <li class="fas fa-star disable"></li>
+            </ul> 
+        </div>
+    </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men3.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Mamaearth-Vitamin-Skincare-Regimen-Kit/dp/B08HN8WYRP/ref=sr_1_7?crid=3OTF1DRUYX7P4&keywords=mamaearth+skin+care+kit&qid=1701587701&sprefix=mama+earthskin+%2Caps%2C315&sr=8-7" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>  
+          </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>934</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Mamaearth-Vitamin-Skincare-Regimen-Kit/dp/B08HN8WYRP/ref=sr_1_7?crid=3OTF1DRUYX7P4&keywords=mamaearth+skin+care+kit&qid=1701587701&sprefix=mama+earthskin+%2Caps%2C315&sr=8-7"> Mamaearth Vitamin C Skincare Facial Kit (Vitamin C - Face Wash 100ml + Face Toner 200ml + Face Cream 50g) </h3></a>
+          <br>
+        <ul class="rating">4.0
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul>
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men4.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Reduces-glowing-complexion-Reduction-removal/dp/B0CHFVGKGG/ref=sr_1_49?keywords=best+skin+care+products+for+men&qid=1701579918&sr=8-49" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+          </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>680</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Reduces-glowing-complexion-Reduction-removal/dp/B0CHFVGKGG/ref=sr_1_49?keywords=best+skin+care+products+for+men&qid=1701579918&sr=8-49">Beardo De Tan Skin Care Trio Combo (Pack of 3) </h3></a>
+           <ul class="rating">5.0
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men5.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Minimalist-Moisturizer-Hyaluronic-Nourishment-Hydration/dp/B09Q3MJZQB/ref=sr_1_76?keywords=best+skin+care+products+for+men&qid=1701579918&sr=8-76" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+          </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>284</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Minimalist-Moisturizer-Hyaluronic-Nourishment-Hydration/dp/B09Q3MJZQB/ref=sr_1_76?keywords=best+skin+care+products+for+men&qid=1701579918&sr=8-76">Minimalist Marula Oil 5% Face Moisturizer For Dry Skin With Hyaluronic Acid For Deep Nourishment & Hydration, For Men & Women</h3></a>
+           <ul class="rating">4.2
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men6.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Hair-Growth-Vitalizer-Shampoo-Promotes/dp/B09QXLRRXY/ref=sr_1_3_sspa?crid=8T0UPCE0DT9X&keywords=best+hair+care+products+for+men&qid=1701580697&sprefix=best+air+care+products+for+men%2Caps%2C307&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+               </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+          </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>336</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Hair-Growth-Vitalizer-Shampoo-Promotes/dp/B09QXLRRXY/ref=sr_1_3_sspa?crid=8T0UPCE0DT9X&keywords=best+hair+care+products+for+men&qid=1701580697&sprefix=best+air+care+products+for+men%2Caps%2C307&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1">Beardo Hair Growth Vitalizer Shampoo, 200 ml</h3></a>
+           <ul class="rating">4.0
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men7.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Garnier-Turbo-Bright-Super-Serum/dp/B0BL135JQF/ref=sr_1_78?keywords=best+skin+care+products+for+men&qid=1701579918&sr=8-78" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+             </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+          </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>371</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Garnier-Turbo-Bright-Super-Serum/dp/B0BL135JQF/ref=sr_1_78?keywords=best+skin+care+products+for+men&qid=1701579918&sr=8-78">Garnier Men Turbo Bright Super Serum Gel Moisturizer For Men </h3></a>
+           <ul class="rating">3.9
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men8.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/WOW-Skin-Science-Brightening-Vitamin/dp/B09FXLS3R9/ref=sr_1_27?crid=7XW5JYPE3IAV&keywords=wow+face+wash+for+men&qid=1701587453&sprefix=wow+face+wash+for+men%2Caps%2C338&sr=8-27" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>429</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/WOW-Skin-Science-Brightening-Vitamin/dp/B09FXLS3R9/ref=sr_1_27?crid=7XW5JYPE3IAV&keywords=wow+face+wash+for+men&qid=1701587453&sprefix=wow+face+wash+for+men%2Caps%2C338&sr=8-27">WOW Skin Science Brightening Vitamin C Face Wash - No Parabens, Sulphate, Silicones & Color - Pack of 2 - Net Vol 200mL</h3></a>
+           <ul class="rating">4.0
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men9.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Parachute-Advansed-Dandruff-Cream-100gm/dp/B0048CCGPS/ref=sr_1_26?crid=8T0UPCE0DT9X&keywords=best+hair+care+products+for+men&qid=1701580697&sprefix=best+air+care+products+for+men%2Caps%2C307&sr=8-26" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>86</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Parachute-Advansed-Dandruff-Cream-100gm/dp/B0048CCGPS/ref=sr_1_26?crid=8T0UPCE0DT9X&keywords=best+hair+care+products+for+men&qid=1701580697&sprefix=best+air+care+products+for+men%2Caps%2C307&sr=8-26">Parachute Advansed Hair Cream For Men, 100ml |Anti Dandruff |Hair Cream After Shower |Non Sticky Oil Replacement Hair Cream</h3></a>
+           <ul class="rating">4.2
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men10.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Beardo-Beard-Color-Men-Friendly/dp/B0CFVWCYLH/ref=sr_1_8?crid=1VK7BIJUHE3CX&keywords=skin+and+hair+care+product+for+men&qid=1701795382&sprefix=skin+and+hair+care+product+for+men%2Caps%2C432&sr=8-8" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>350</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Beardo-Beard-Color-Men-Friendly/dp/B0CFVWCYLH/ref=sr_1_8?crid=1VK7BIJUHE3CX&keywords=skin+and+hair+care+product+for+men&qid=1701795382&sprefix=skin+and+hair+care+product+for+men%2Caps%2C432&sr=8-8">Beardo Beard Color For Men - Natural Brown, 60ml </h3></a>
+          <ul class="rating">4.0
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men11.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Man-Company-Whitehead-Blackhead-Cleansing/dp/B09GFV464X/ref=sr_1_20?crid=1KT92M9KFGMB7&keywords=men+best+skin+care+product&qid=1701795833&sprefix=men+best+skin+care+product%2Caps%2C412&sr=8-20" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>939</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Man-Company-Whitehead-Blackhead-Cleansing/dp/B09GFV464X/ref=sr_1_20?crid=1KT92M9KFGMB7&keywords=men+best+skin+care+product&qid=1701795833&sprefix=men+best+skin+care+product%2Caps%2C412&sr=8-20">The Man Company De Tan Charcoal Facial Kit for Men with Face Wash</h3></a>
+           <ul class="rating">4.1
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men12.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Man-Company-Daily-Moisturising-butter/dp/B07JNH9W9J/ref=sr_1_51?crid=1KT92M9KFGMB7&keywords=men+best+skin+care+product&qid=1701795833&sprefix=men+best+skin+care+product%2Caps%2C412&sr=8-51" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>261</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Man-Company-Daily-Moisturising-butter/dp/B07JNH9W9J/ref=sr_1_51?crid=1KT92M9KFGMB7&keywords=men+best+skin+care+product&qid=1701795833&sprefix=men+best+skin+care+product%2Caps%2C412&sr=8-51">The Man Company Non-Sticky Daily Moisturizing Cream for Dry Skin  </h3></a>
+          <ul class="rating">4.1
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men13.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Beardo-BOF-Reduces-Vitamin-Designed/dp/B0CHBCB88B/ref=sr_1_25?crid=4KHRYW6QUIUP&keywords=skin+care+for+man&qid=1701796222&sprefix=skin+care+for+man%2Caps%2C297&sr=8-25" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>849</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Beardo-BOF-Reduces-Vitamin-Designed/dp/B0CHBCB88B/ref=sr_1_25?crid=4KHRYW6QUIUP&keywords=skin+care+for+man&qid=1701796222&sprefix=skin+care+for+man%2Caps%2C297&sr=8-25">Beardo BOF Skin Pro Kit | Bright & Oil Free skin | Reduces Dark Spots | SPF 30 & Vitamin C | Designed for men's skin</h3></a>
+           <ul class="rating">4.0
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div><div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men14.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Man-Matters-Strengthening-Nourishing-Conditioner/dp/B08Y73JQZG/ref=sr_1_5?crid=1KXUZ9Q7X1JGW&keywords=hair+care+for+man&qid=1701796275&sprefix=hai+care+for+man%2Caps%2C322&sr=8-5" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>292</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Man-Matters-Strengthening-Nourishing-Conditioner/dp/B08Y73JQZG/ref=sr_1_5?crid=1KXUZ9Q7X1JGW&keywords=hair+care+for+man&qid=1701796275&sprefix=hai+care+for+man%2Caps%2C322&sr=8-5">Man Matters Complete Hair Care Kit | Anti Hair fall shampoo 200ml | Keratin Conditioner 90ml| Hair serum </h3></a>
+           <ul class="rating">4.2
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men15.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Himalaya-Non-sticky-Replacement-Cheakpeas-conditioning/dp/B01LB4BX6I/ref=sr_1_13?crid=1KXUZ9Q7X1JGW&keywords=hair+care+for+man&qid=1701796275&sprefix=hai+care+for+man%2Caps%2C322&sr=8-13" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>85</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Himalaya-Non-sticky-Replacement-Cheakpeas-conditioning/dp/B01LB4BX6I/ref=sr_1_13?crid=1KXUZ9Q7X1JGW&keywords=hair+care+for+man&qid=1701796275&sprefix=hai+care+for+man%2Caps%2C322&sr=8-13">Himalaya Protein Hair Cream for Damage control, Non-sticky, Oil Replacement</h3></a>
+           <ul class="rating">4.2
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul>
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="men16.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Nivea-Dark-Spot-Reduction-Facewash/dp/B006LX9VPU/ref=sr_1_55?crid=1KT92M9KFGMB7&keywords=men+best+skin+care+product&qid=1701796756&sprefix=men+best+skin+care+product%2Caps%2C412&sr=8-55" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>186</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Nivea-Dark-Spot-Reduction-Facewash/dp/B006LX9VPU/ref=sr_1_55?crid=1KT92M9KFGMB7&keywords=men+best+skin+care+product&qid=1701796756&sprefix=men+best+skin+care+product%2Caps%2C412&sr=8-55">NIVEA MEN Dark Spot Reduction Face Wash 100 g</h3></a>
+          <ul class="rating">4.0
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="women16.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Dove-Intense-Repair-Shampoo-1L/dp/B07H9SV624/ref=sr_1_48?crid=1IS0FV7VZ6HEL&keywords=shampoo%2Bfor%2Bmen%2Bhair&qid=1701711399&sprefix=shapo%2Bfor%2Bman%2Bhair%2Caps%2C299&sr=8-48&th=1" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>571</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Dove-Intense-Repair-Shampoo-1L/dp/B07H9SV624/ref=sr_1_48?crid=1IS0FV7VZ6HEL&keywords=shampoo%2Bfor%2Bmen%2Bhair&qid=1701711399&sprefix=shapo%2Bfor%2Bman%2Bhair%2Caps%2C299&sr=8-48&th=1">Dove Intense Repair Shampoo 1 L, Repairs Dry and Damaged Hair, Strengthening Shampoo for Smooth & Strong Hair - Mild Daily Shampoo for Men & Women</a></h3>
+          <ul class="rating">4.3
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="women17.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Matrix-Opti-care-Professional-Smoothing-Conditioner/dp/B08W2KNBK8/ref=sr_1_1_sspa?crid=1IS0FV7VZ6HEL&keywords=shampoo%2Bfor%2Bmen%2Bhair&qid=1701711399&sprefix=shapo%2Bfor%2Bman%2Bhair%2Caps%2C299&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>588</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Matrix-Opti-care-Professional-Smoothing-Conditioner/dp/B08W2KNBK8/ref=sr_1_1_sspa?crid=1IS0FV7VZ6HEL&keywords=shampoo%2Bfor%2Bmen%2Bhair&qid=1701711399&sprefix=shapo%2Bfor%2Bman%2Bhair%2Caps%2C299&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">Matrix Opti.Care Professional Smooth Straight with Shea Butter, Up to 4 Days of Frizz Control</h3></a>
+           <ul class="rating">4.3
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+<div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="women18.jpg">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              <li><a href="https://www.amazon.in/Indulekha-Bringha-Ayurvedic-Control-Bringharaj/dp/B00S850C5C/ref=sr_1_1_sspa?crid=2H5OL1NJSSBR8&keywords=oil%2Bfor%2Bhair%2Bgrowth&qid=1701717203&sprefix=oil%2Bfor%2Caps%2C264&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              </a></li>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>410</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Indulekha-Bringha-Ayurvedic-Control-Bringharaj/dp/B00S850C5C/ref=sr_1_1_sspa?crid=2H5OL1NJSSBR8&keywords=oil%2Bfor%2Bhair%2Bgrowth&qid=1701717203&sprefix=oil%2Bfor%2Caps%2C264&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1">Indulekha Bringha Ayurvedic Hair Oil 100 ml|| Hair Fall Control and Hair Growth with Bringharaj & Coconut Oil - Comb Applicator Bottle</h3></a>
+          <ul class="rating">4.1
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul>
+      </div>
+  </div>
+</div><div class="col-md-3 col-sm-6">
+  <div class="product-grid new">
+      <div class="product-image">
+          <a href="#" class="image">
+              <img class="pic-1" src="women20.webp">
+          </a>
+          
+          <ul class="product-links">
+              <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+              
+              </a></li>
+              <li><a href="https://www.amazon.in/Indulekha-Bringha-Ayurvedic-Control-Bringharaj/dp/B00S850C5C/ref=sr_1_1_sspa?crid=2H5OL1NJSSBR8&keywords=oil%2Bfor%2Bhair%2Bgrowth&qid=1701717203&sprefix=oil%2Bfor%2Caps%2C264&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1" data-tip="buy now"><i class="fa-solid fa-bag-shopping fa-shake"></i>
+              <li><a href="" data-tip="Add to Cart"><i class="fa-solid fa-cart-shopping"></i>
+              </a></li>
+               </ul>
+          <div class="price"><i class="fa-solid fa-indian-rupee-sign fa-bounce fa-xs"></i>376</div>
+      </div>
+      <div class="product-content">
+        <h3 class="title"><a href="https://www.amazon.in/Mamaearth-Onion-Growth-Control-Redensyl/dp/B07W7CTLD1/ref=sr_1_13?crid=2H5OL1NJSSBR8&keywords=oil%2Bfor%2Bhair%2Bgrowth&qid=1701717203&sprefix=oil%2Bfor%2Caps%2C264&sr=8-13&th=1">Mamaearth Onion Hair Oil for Hair Growth & Hair Fall Control  </h3></a>
+           <ul class="rating">4.0
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star"></li>
+              <li class="fas fa-star disable"></li>
+          </ul> 
+      </div>
+  </div>
+</div>
+
+</body>
+</html>
