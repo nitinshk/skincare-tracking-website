@@ -1,5 +1,6 @@
 # skincare-website
 It is a skincare project contaning HTML CSS JS. This website give the basic home remedies of skincare and haircare.
+
 Welcome to DermaHome 🌟
 
 DermaHome is your go-to destination for facial remedies, all in one place! Whether you're looking for skincare tips, DIY facial masks, or expert advice, we've got you covered. Get ready to glow from within with DermaHome.
