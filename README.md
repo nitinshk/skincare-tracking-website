@@ -1,5 +1,5 @@
 # skincare-website
-It is a skincare project contaning HTML CSS JS. This website give the basic home remedies of skincare and haircare.
+It is a skincare project contaning HTML CSS JS PYTHON This website give the basic home remedies of skincare and haircare.
 
 Welcome to DermaHome 🌟
 
@@ -13,6 +13,8 @@ HTML: Structured the content of the website for easy navigation and accessibilit
 CSS: Styled the website to create an inviting and soothing user experience.
 
 JavaScript: Added interactive features and functionalities to enhance user engagement.
+
+Pyhton : Used python for the tracking of daily skin care routine.
 
 Features
 Browse through a variety of facial remedies and skincare routines.
